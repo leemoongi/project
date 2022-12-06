@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :class="{ 'text-red': ture, activ: ture }"></div>
+    <div :class="{ 'text-red': hasError, activ: activTrue }">글자입니다</div>
   </div>
 </template>
 <script>
@@ -8,7 +8,8 @@ export default {
   components: {},
   data() {
     return {
-      sampleData: ''
+      hasError: true,
+      activTrue: true
     }
   },
   created() {},

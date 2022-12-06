@@ -1,17 +1,23 @@
 <template>
-  <div></div>
+  <div>
+    <button @click="addCount">Add {{ counter }}</button>
+  </div>
 </template>
 <script>
 export default {
   components: {},
   data() {
     return {
-      sampleData: ''
+      counter: 0
     }
   },
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {}
+  methods: {
+    addCount() {
+      this.counter += 1
+    }
+  }
 }
 </script>
